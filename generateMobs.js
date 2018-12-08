@@ -6,7 +6,7 @@ function generateMobs(i) {
     } else {
         b = 7
     };
-    for (let j = 1; j < parseInt(Math.random() * 3) + 6 + i / 2; j++) {
+    for (var j = 1; j < parseInt(Math.random() * 3) + 6 + i / 2; j++) {
         s += parseInt(Math.random() * b) + " "
     }
     return s
