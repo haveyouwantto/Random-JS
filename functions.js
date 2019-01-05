@@ -58,3 +58,12 @@ function isPrime(n) {
         return false
     }
 }
+
+function filmTranslate(str) {
+	var tsstr = ["*奇缘", "*总动员", "*特工队", "*环游记", "疯狂*人"];
+	var outarray = [];
+	for (var i = 0; i < tsstr.length; i++) {
+		outarray = outarray.concat(tsstr[i].replace("*", str));
+	}
+	return outarray;
+}
