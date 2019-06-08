@@ -11,6 +11,6 @@ function toCmd(arr) {
 	for (let i = 0; i < arr.length; i++) {
 		out += "[vi" + i + "][" + i + ":a] ";
 	}
-	out += "concat=n=" + arr.length + ":v=1:a=1 [out]\" -map [out] -vcodec h264 -acodec aac -maxrate 1536k output.mkv"
+	out += "concat=n=" + arr.length + ":v=1:a=1 [out]\" -map [out] -vcodec h264 -acodec aac output.mkv"
 	return out;
 }
