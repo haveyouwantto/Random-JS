@@ -13,6 +13,6 @@ function prime(n) {
 	}
 	return isprime;
 }
-for (let j = 3; j < 10000000; j++) {
+for (let j = 3; j < 1000; j++) {
 	prime(j);
 }
