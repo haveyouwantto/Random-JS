@@ -3,9 +3,7 @@ function toFraction(n) {
         let n1 = n * i;
         let n2 = parseInt(n1);
         if (Math.abs(n1 - n2) < 0.000001) {
-            console.log(i);
-            console.log(n * i);
-            break;
+            return (n * i) + " / " + i;
         }
     }
 }
