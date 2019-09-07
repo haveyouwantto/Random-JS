@@ -1,11 +1,12 @@
 function toFraction(n) {
-    for (let i = 1; i < 100000000; i++) {
+    for (let i = 1; i < 10000000; i++) {
         let n1 = n * i;
         let n2 = Math.round(n1);
         if (Math.abs(n1 - n2) < 1e-15) {
             return (n * i) + " / " + i;
         }
     }
+    return n.toString();
 }
 
 function solveQuadratic(a, b, c) {
