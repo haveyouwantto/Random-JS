@@ -1,5 +1,5 @@
 function toFraction(n) {
-    for (let i = 1; i < 1000; i++) {
+    for (let i = 1; i < 100000; i++) {
         let n1 = n * i;
         let n2 = parseInt(n1);
         if (Math.abs(n1 - n2) < 0.000001) {
@@ -22,8 +22,8 @@ function solveQuadratic(a, b, c) {
 }
 
 function divisor(n) {
-    let out = [];
-    for (let a = 1; a <= n; ++a) {
+    let out = [1];
+    for (let a = 2; a <= n; ++a) {
         if (n % a == 0) {
             out = out.concat(a);
         }
