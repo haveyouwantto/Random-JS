@@ -1,7 +1,7 @@
 function toFraction(n) {
     for (let i = 1; i < 100000; i++) {
         let n1 = n * i;
-        let n2 = parseInt(n1);
+        let n2 = Math.round(n1);
         if (Math.abs(n1 - n2) < 0.000001) {
             return (n * i) + " / " + i;
         }
