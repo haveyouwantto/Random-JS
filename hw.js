@@ -31,3 +31,13 @@ function divisor(n) {
     }
     return out;
 }
+
+function toSquareRoot(n) {
+    let n1 = n * n;
+    let n2 = Math.round(n1);
+    if (Math.abs(n1 - n2) < 1e-12) {
+        return "sqrt " + n2;
+    }
+
+    return n.toString();
+}
