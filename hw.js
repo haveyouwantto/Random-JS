@@ -10,7 +10,7 @@ function toFraction(n) {
     }
 }
 
-function solve(a, b, c) {
+function solveQuadratic(a, b, c) {
     let delta = Math.pow(b, 2) - 4 * a * c;
     if (delta >= 0) {
         let ta = 2 * a;
