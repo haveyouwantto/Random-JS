@@ -22,7 +22,7 @@ function solveQuadratic(a, b, c) {
 }
 
 function divisor(n) {
-    out = [];
+    let out = [];
     for (let a = 1; a <= n; ++a) {
         if (n % a == 0) {
             out = out.concat(a);
