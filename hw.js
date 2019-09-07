@@ -20,3 +20,13 @@ function solveQuadratic(a, b, c) {
         throw new Error("Delta < 0");
     }
 }
+
+function divisor(n) {
+    out = [];
+    for (let a = 1; a <= n; ++a) {
+        if (n % a == 0) {
+            out = out.concat(a);
+        }
+    }
+    return out;
+}
